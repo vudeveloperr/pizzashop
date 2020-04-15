@@ -1,0 +1,164 @@
+﻿.container .row.block {
+    border: 1px solid #bebbbb;
+    max-width: 640px;
+    margin: 20px auto;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.14);
+}
+
+.container .row.block.user h3 {
+    margin: 0 auto;
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+}
+
+/* go back menu */
+.backMenu {
+    background-color: #bab8b8;
+    padding: 5px 0;
+}
+.backMenu a {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.backMenu a img {
+    width: 10px;
+    margin: 0 5px 0 20px;
+}
+
+/* .container .row.block h6 {
+    font-size: 16px;
+    margin: 0 auto;
+} */
+
+.container .block {
+    margin: 40px 0px;
+}
+/*tieu de 1 block*/
+.container .row p {
+    border-bottom: 1px solid #bebbbb;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.container .row p span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 20px;
+    transform: translate(0px, 50%);
+}
+
+/*custom*/
+.new-customer .content {
+    margin-top: 25px;
+}
+.new-customer, 
+.sign-in, 
+.sign-in-with {
+    padding: 0 30px;
+}
+.new-customer button, 
+.sign-in button {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #70a401;
+    color: white;
+}
+.new-customer button:hover, 
+.sign-in button:hover {
+    color: black;
+}
+
+/*new customer*/
+.container .row.block ul {
+    opacity: 0.4;
+    margin: 10px 0;
+}
+.container .row.block .new-customer .content ul {
+    list-style-type: disc;
+}
+
+/*sign in*/
+.sign-in {
+    width: 100%;
+}
+.sign-in form {
+    margin-top: 15px;
+}
+.sign-in form h6 {
+    margin-top: 10px;
+}
+.sign-in input {
+    font-size: 15px;
+    line-height: 1.33333;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    padding: 0 14px;
+    color: #000;
+    border: 2px solid hsla(207, 8%, 51%, .5);
+    border-radius: 4px;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-transition: border .2s ease-in;
+    transition: border .2s ease-in;
+    min-height: 44px;
+}
+.sign-in a {
+    text-decoration: none;
+    color: darkred;
+    float: right;
+    margin: 10px 0;
+}
+.sign-in a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*sign input with*/
+.sign-in-with {
+    width: 100%;
+}
+.sign-in-with .button {
+    margin-top: 25px;
+}
+.sign-in-with .button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15px;
+}
+.sign-in-with .button .facebook {
+    margin-right: 10px;
+    background-color: #337ab7;
+}
+.sign-in-with .button .google {
+    margin-left: 10px;
+    background-color: #d9534f;
+}
+.sign-in-with .button .facebook,
+.sign-in-with .button .google {
+    opacity: 0.9;
+    height:30px;
+}
+.sign-in-with .button .facebook:hover,
+.sign-in-with .button .google:hover {
+    opacity: 1;
+    color: white;
+}
+.sign-in-with .button .facebook a,
+.sign-in-with .button .google a {
+    color:white;
+    text-decoration:none;
+
+}
+
+/* Login admin */
+.btn-login a {
+    width: 100%;
+    color: white;
+}
+.btn-login a:hover {
+    text-decoration: none;
+}

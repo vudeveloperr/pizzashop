@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* // Banner */
+.banner {
+    background-color: red;
+    background-image: url(../images/bannerCart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+
+/* bang gia */
+
+.container .row .cart-shop {
+    width: 100%;
+}
+.container .row .cart-shop .product-table thead {
+    background-color: gainsboro;
+}
+.container .row .cart-shop .product-table tbody img {
+    width: 100px;
+}
+.container .row .cart-shop .product-table thead tr th,
+.container .row .cart-shop .product-table tbody tr td {
+    text-align: center;
+}
+.container .row .cart-shop .product-table thead tr th {
+    vertical-align: inherit;
+}
+.container .row .cart-shop .product-table tbody tr td.center-on-small-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
