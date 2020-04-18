@@ -1,0 +1,28 @@
+﻿/*modal sanpham*/
+.modal .modal-body .price-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+}
+
+.modal .modal-body .chose-size {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal .modal-body .chose-size .form-group.form-check {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+.main-item .s-right a p {
+    line-height: inherit;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.main-item .s-right a:hover > p {
+    color: red;
+}
