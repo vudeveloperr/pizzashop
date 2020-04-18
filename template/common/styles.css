@@ -75,10 +75,16 @@ textarea:focus { outline-color: #EF0031; }
         right: 0;
         transform: translate(-15px, 10px);
 } 
+
 /* Menu item */
 .story-area .row .menu-item {
         border-radius: 10px;
 }
+.main-item img:hover {
+        transform: scale(1.3);
+        transition: all .4s ease-in-out; 
+}
+
 /* event bay anhr */
 .img-product-fly {
 	position: absolute;

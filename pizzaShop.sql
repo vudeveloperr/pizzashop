@@ -1,7 +1,7 @@
 create database PizzaShop
 
 create table tblUser(
-	userid int primary key,
+	userid int primary key identity,
 	username nvarchar(250) not null,
 	email varchar(250) not null,
 	passworduser varchar(50) not null,
@@ -12,7 +12,7 @@ create table tblUser(
 
 go
 create table tblpayment(
-	payid int primary key,
+	payid int primary key identity,
 	email nvarchar(250),
 	kieuthanhtoan nvarchar(250),
 	tennganhang nvarchar(250),
@@ -22,7 +22,7 @@ create table tblpayment(
 
 go 
 create table tblfood(
-	mamon int primary key, 
+	mamon int primary key identity, 
 	tenmon nvarchar(250),
 	gia float,
 	img VARBINARY(MAX),
@@ -34,7 +34,7 @@ create table tblfood(
 
 go
 create table tblorder(
-	mahoadon int primary key,
+	mahoadon int primary key identity,
 	tongtien float,
 	soluong int,
 	thoigiandat DateTime,
