@@ -1,9 +1,11 @@
 ﻿
+@using Model.Entities;
 @{
     ViewBag.Title = "Menu";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model IEnumerable<Model.Entities.tblMonAn>
 
 <section class="bg-5 h-500x main-slider pos-relative">
     <div class="triangle-up pos-bottom"></div>
@@ -16,73 +18,6 @@
     </div><!-- container -->
 </section>
 
-
-<section class="story-area left-text center-sm-text">
-    <div class="container">
-        <div class="heading"><h3>Pizza</h3></div>
-        <div class="row">
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/Pizza/BBQ-Chicken-Pizza.jpg" class="menu-item" alt="">
-                    </div>
-                    <h5 class="">Pizza Chicken BBQ</h5>
-                    <h6 class="mt-5 color-primary">55.000 VNĐ</h6>
-                    <h5 class=" dplay-inl-block m-10">
-                        <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
-                            <b>Mua Ngay</b>
-                        </a>
-                    </h5>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/Pizza/Chorizo-Pizza.jpg" class="menu-item" alt="">
-                    </div>
-                    <h5 class="">Pizza Chorizo</h5>
-                    <h6 class="mt-5 color-primary">65.000 VNĐ</h6>
-                    <h5 class=" dplay-inl-block m-10">
-                        <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
-                            <b>Mua Ngay</b>
-                        </a>
-                    </h5>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/Pizza/Hawaii-Pizza.jpg" class="menu-item" alt="">
-                    </div>
-                    <h5 class="">Pizza Hawaii</h5>
-                    <h6 class="mt-5 color-primary">70.000 VNĐ</h6>
-                    <h5 class=" dplay-inl-block m-10">
-                        <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
-                            <b>Mua Ngay</b>
-                        </a>
-                    </h5>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/Pizza/Mexican-Pizza.jpg" class="menu-item" alt="">
-                    </div>
-                    <h5 class="">Pizza Mexico</h5>
-                    <h6 class="mt-5 color-primary">105.000 VNĐ</h6>
-                    <h5 class=" dplay-inl-block m-10">
-                        <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
-                            <b>Mua Ngay</b>
-                        </a>
-                    </h5>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-        </div><!-- row-->
-    </div><!-- container -->
-</section>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -98,46 +33,46 @@
                     <div class="sided-90x mb-30 main-item">
                         <div class="s-left"><img class="br-3" src="~/Content/images/Pizza/Veggie-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
                         <div class="s-right">
-                                <p>
-                                    Đây là sản  phẩm tuyệt vời nhất của chúng tôi. Sóng gió bạc phận hồng nhan.
-                                    Từ ngày  thơ đến khi ta thờ còn thờ ơ, thương em bờ vai nhỏ nhoi. Đời phiêu du khó tìm.
-                                </p>
-                                <div class="price-item">
-                                    <div>
-                                        <b>Cỡ nhỏ:</b>
-                                        <p>89.000 VNĐ</p>
-                                    </div>
-                                    <div>
-                                        <b>Cỡ vừa:</b> 
-                                        <p>189.000 VNĐ</p>
-                                    </div>
-                                    <div>
-                                        <b>Cỡ lớn:</b> 
-                                        <p>259.000 VNĐ</p>
-                                    </div>
+                            <p>
+                                Đây là sản  phẩm tuyệt vời nhất của chúng tôi. Sóng gió bạc phận hồng nhan.
+                                Từ ngày  thơ đến khi ta thờ còn thờ ơ, thương em bờ vai nhỏ nhoi. Đời phiêu du khó tìm.
+                            </p>
+                            <div class="price-item">
+                                <div>
+                                    <b>Cỡ nhỏ:</b>
+                                    <p>89.000 VNĐ</p>
                                 </div>
-                                <div class="chose-size">
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="" id="cbSizeS">
-                                        <label class="form-check-label" for="cbSizeS">Cỡ nhỏ</label>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="" id="cbSizeM">
-                                        <label class="form-check-label" for="cbSizeM">Cỡ vừa</label>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="" id="cbSizeL">
-                                        <label class="form-check-label" for="cbSizeL">Cỡ lớn</label>
-                                     </div>
-                                 </div>
+                                <div>
+                                    <b>Cỡ vừa:</b>
+                                    <p>189.000 VNĐ</p>
+                                </div>
+                                <div>
+                                    <b>Cỡ lớn:</b>
+                                    <p>259.000 VNĐ</p>
+                                </div>
+                            </div>
+                            <div class="chose-size">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeS">
+                                    <label class="form-check-label" for="cbSizeS">Cỡ nhỏ</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeM">
+                                    <label class="form-check-label" for="cbSizeM">Cỡ vừa</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeL">
+                                    <label class="form-check-label" for="cbSizeL">Cỡ lớn</label>
+                                </div>
+                            </div>
                         </div><!--s-right-->
                     </div><!-- sided-90x -->
                 </div><!-- food-menu -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary"  data-dismiss="modal">
-                    <a href="javascript:void(0);" class="btn-addToCart" >
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <a href="javascript:void(0);" class="btn-addToCart">
                         <b>Đặt hàng</b>
                     </a>
                 </button>
@@ -148,111 +83,28 @@
 
 <section class="bg-lite-blue">
     <div class="container">
+        <div class="heading"><h3>Pizza</h3></div>
         <div class="row">
+            @foreach (tblMonAn item in Model)
+            {
+                if (item.LoaiMon == "Pizza" && item.KichThuoc == "Size S")
+                {
+                    <div class="col-md-6">
+                        <div class="sided-90x mb-30 main-item">
+                            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+                            <div class="s-right">
+                                <b>@item.TenMon</b>
+                                <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
+                                    <p>Thêm ngay</p>
+                                </a>
+                                <p class="pr-70">@item.MoTa</p>
+                            </div><!--s-right-->
+                        </div><!-- sided-90x -->
+                    </div><!-- food-menu -->
+                }
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/Pizza/Veggie-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            }
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/Pizza/Smoke-Chicken-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/Pizza/Salami-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/Pizza/Meat-Lovers-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
         </div><!-- row -->
     </div><!-- container -->
 </section>
@@ -262,180 +114,101 @@
     <div class="pos-bottom triangle-up"></div>
     <div class="pos-top triangle-bottom"></div>
     <div class="container">
-        <div class="heading mb-sm-10"><h3>Salad tươi, ngon, sạch</h3></div>
-    </div><!-- container -->
+        <div class="heading mb-sm-10"><h3>Pasta</h3></div>
+    </div>
 </section>
-
 
 <section>
     <div class="container">
 
         <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
         <!-- Pasta -->
         <div class="row">
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            @foreach (tblMonAn item in Model)
+            {
+                if (item.LoaiMon == "Pasta" && item.KichThuoc == "Size S")
+                {
+                    <div class="col-md-6">
+                        <div class="sided-90x mb-30 main-item">
+                            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+                            <div class="s-right">
+                                <b>@item.TenMon</b>
+                                <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
+                                    <p>Thêm ngay</p>
+                                </a>
+                                <p class="pr-70">@item.MoTa</p>
+                            </div><!--s-right-->
+                        </div><!-- sided-90x -->
+                    </div><!-- food-menu -->
+                }
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            }
+        </div><!-- container -->
+</section>
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30main-item ">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-        </div><!-- row -->
-
-        <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
-        <!-- Salad -->
+<section class="bg-lite-blue">
+    <div class="container">
+        <div class="heading"><h3>Salad </h3></div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            @foreach (tblMonAn item in Model)
+            {
+                if (item.LoaiMon == "Salad" && item.KichThuoc == "Size S")
+                {
+                    <div class="col-md-6">
+                        <div class="sided-90x mb-30 main-item">
+                            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+                            <div class="s-right">
+                                <b>@item.TenMon</b>
+                                <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
+                                    <p>Thêm ngay</p>
+                                </a>
+                                <p class="pr-70">@item.MoTa</p>
+                            </div><!--s-right-->
+                        </div><!-- sided-90x -->
+                    </div><!-- food-menu -->
+                }
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            }
 
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-        </div><!-- row -->
-
-        <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
-        <!-- Nuoc -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6">
-                <div class="sided-90x mb-30 main-item">
-                    <div class="s-left"><img class="br-3" src="~/Content/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <b>Pizza Margherita</b>
-                        <a class="float-right btn-primaryc secondary plr-5 " data-toggle="modal" data-target="#exampleModal">
-                            <p>Thêm ngay</p>
-                        </a>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
         </div><!-- row -->
     </div><!-- container -->
+</section>
+
+<section class="story-area bg-seller color-white pos-relative">
+    <div class="pos-bottom triangle-up"></div>
+    <div class="pos-top triangle-bottom"></div>
+    <div class="container">
+        <div class="heading mb-sm-10"><h3>Nước giải khát </h3></div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+        <!-- Pasta -->
+        <div class="row">
+            @foreach (tblMonAn item in Model)
+            {
+                if (item.LoaiMon == "Nuoc")
+                {
+                    <div class="col-md-6">
+                        <div class="sided-90x mb-30 main-item">
+                            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+                            <div class="s-right">
+                                <b>@item.TenMon</b>
+                                <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
+                                    <p>Thêm ngay</p>
+                                </a>
+                                <p class="pr-70">@item.MoTa</p>
+                            </div><!--s-right-->
+                        </div><!-- sided-90x -->
+                    </div><!-- food-menu -->
+                }
+
+            }
+        </div><!-- container -->
 </section>

@@ -1,0 +1,14 @@
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\Model.dll.config
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\Model.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\Model.pdb
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\EntityFramework.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\PagedList.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\EntityFramework.xml
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\PagedList.xml
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\obj\Debug\Model.dll
+C:\Users\nguyenvanvu\source\repos\CongNgheWEB\PizzaShop\Model\obj\Debug\Model.pdb

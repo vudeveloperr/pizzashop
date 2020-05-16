@@ -1,9 +1,11 @@
 ﻿
+@using Model.Entities;
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@model IEnumerable<Model.Entities.tblMonAn>
 
 <section class="story-area bg-seller color-white pos-relative">
     <div class="pos-bottom triangle-up"></div>
@@ -11,227 +13,112 @@
     <div class="container">
         <div class="heading">
             <img class="heading-img" src="images/heading_logo.png" alt="">
-            <h2>Bán chạy nhất</h2>
+            <h2>Chúng tôi có gì</h2>
         </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-            <div class="col-lg-3 col-md-4  col-sm-6 ">
-                <div class="center-text mb-30 main-item">
-                    <div class="ïmg-200x mlr-auto pos-relative">
-                        <img src="~/Content/images/seller-2-200x200.png" alt="">
-                    </div>
-                    <h5 class="mt-20">Pizza Margherita</h5>
-                    <h6 class="mt-20">
-                        <a href="javascript:void(0);" class="btn-brdr-primary plr-5 btn-addToCart">
-                            <b>105.000 VNĐ</b>
-                        </a>
-                    </h6>
-                </div><!--text-center-->
-            </div><!-- col-md-3 -->
-
-        </div><!-- row -->
-    </div><!-- container -->
+    </div>
 </section>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content main-item">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">  </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class="sided-90x mb-30 main-item">
+                        <div class="s-left"><img class="br-3" src="~/Content/images/menu/" alt="Menu Image"></div><!--s-left-->
+                        <div class="s-right">
+                            <p>
+                                
+                            </p>
+                            <div class="price-item">
+                                <div>
+                                    <b>Cỡ nhỏ:</b>
+                                    <p> </p>
+                                </div>
+                                <div>
+                                    <b>Cỡ vừa:</b>
+                                    <p>189.000 VNĐ</p>
+                                </div>
+                                <div>
+                                    <b>Cỡ lớn:</b>
+                                    <p>259.000 VNĐ</p>
+                                </div>
+                            </div>
+                            <div class="chose-size">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeS">
+                                    <label class="form-check-label" for="cbSizeS">Cỡ nhỏ</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeM">
+                                    <label class="form-check-label" for="cbSizeM">Cỡ vừa</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="" id="cbSizeL">
+                                    <label class="form-check-label" for="cbSizeL">Cỡ lớn</label>
+                                </div>
+                            </div>
+                        </div><!--s-right-->
+                    </div><!-- sided-90x -->
+                </div><!-- food-menu -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <a href="javascript:void(0);" class="btn-addToCart">
+                        <b>Đặt hàng</b>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
 <section>
     <div class="container">
-        <div class="heading">
-            <img class="heading-img" src="images/heading_logo.png" alt="">
-            <h2>Chúng tôi có gì</h2>
-        </div>
+       
 
         <div class="row">
             <div class="col-sm-12">
                 <ul class="selecton brdr-b-primary mb-70">
                     <li><a class="active" href="#" data-select="*"><b>TẤT CẢ</b></a></li>
-                    <li><a href="#" data-select="pizza"><b>PIZZA</b></a></li>
-                    <li><a href="#" data-select="pasta"><b>PASTA</b></a></li>
-                    <li><a href="#" data-select="salads"><b>ĐỒ UỐNG</b></a></li>
-                    <li><a href="#" data-select="deserts"><b>SƯỜNG BBQ</b></a></li>
-                    <li><a href="#" data-select="deserts"><b>SALAD</b></a></li>
+                    <li><a href="/Home/Index/Pizza" data-select="Pizza"><b>PIZZA</b></a></li>
+                    <li><a href="#" data-select="Pasta"><b>PASTA</b></a></li>
+                    <li><a href="#" data-select="Salads"><b>ĐỒ UỐNG</b></a></li>
+                    <li><a href="#" data-select="Deserts"><b>SALAD</b></a></li>
                 </ul>
             </div><!--col-sm-12-->
         </div><!--row-->
 
+
         <div class="row">
-            <div class="col-md-6 food-menu pizza">
-                <div class="sided-90x mb-30 ">
-                    <div class="s-left"><img class="br-3" src="images/menu-1-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu pizza pasta">
-                <div class="sided-90x mb-30 ">
-                    <div class="s-left"><img class="br-3" src="images/menu-2-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
-                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu pasta">
-                <div class="sided-90x mb-30 ">
-                    <div class="s-left"><img class="br-3" src="images/menu-3-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu salads">
-                <div class="sided-90x mb-30">
-                    <div class="s-left"><img class="br-3" src="images/menu-4-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
-                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-            <div class="col-md-6 food-menu deserts">
-                <div class="sided-90x mb-30">
-                    <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu pizza">
-                <div class="sided-90x mb-30 ">
-                    <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
-                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu deserts">
-                <div class="sided-90x mb-30">
-                    <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
-                        <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
-
-            <div class="col-md-6 food-menu pasta">
-                <div class="sided-90x mb-30 ">
-                    <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                    <div class="s-right">
-                        <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
-                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                    </div><!--s-right-->
-                </div><!-- sided-90x -->
-            </div><!-- food-menu -->
+            @foreach (tblMonAn item in Model)
+            {
+                    <div class="col-md-6 ">
+                        <div class="sided-90x mb-30 main-item">
+                            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+                            <div class="s-right">
+                                <b>@item.TenMon</b>
+                                <a class="float-right btn-fill-primary plr-5" data-toggle="modal" data-target="#exampleModal">
+                                    <p>Thêm ngay</p>
+                                </a>
+                                <p class="pr-70">@item.MoTa</p>
+                            </div><!--s-right-->
+                        </div><!-- sided-90x -->
+                    </div><!-- food-menu -->
+            }
         </div><!-- row -->
     </div><!-- container -->
 </section>
+
 
