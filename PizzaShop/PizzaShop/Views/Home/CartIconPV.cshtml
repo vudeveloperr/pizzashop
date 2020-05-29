@@ -1,0 +1,12 @@
+﻿
+@model List<PizzaShop.Models.CartItem>
+
+
+<div class="right-area">
+    <a id="card-shop" class="plr-20 color-white btn-fill-primary" href="~/CartShop/Index">
+        <img src="~/Content/images/Logo/cart-plus-solid.svg" alt="CartShop">
+        <span class="item-increat count-item" data-count="0" id="SoLuong">
+            @Model.Count
+        </span>
+    </a>
+</div><!-- right-area -->

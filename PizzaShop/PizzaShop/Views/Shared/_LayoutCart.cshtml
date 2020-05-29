@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PizzaH&V</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/fonts/beyond_the_mountains-webfont.css" type="text/css" />
+
+    <!-- Stylesheets -->
+    <link href="~/Content/plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/plugin-frameworks/swiper.css" rel="stylesheet">
+    <link href="~/Content/fonts/ionicons.css" rel="stylesheet">
+    <link href="~/Content/common/styleCartShop.css" rel="stylesheet" />
+    <link href="~/Content/common/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="#"><img src="~/Content/images/Logo/Logo.png" alt="Logo"></a>
+
+            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+            <ul class="main-menu font-mountainsre" id="main-menu">
+                <li>@Html.ActionLink("Menu", "Menu", "Home")</li>
+                <li>@Html.ActionLink("Thông tin người dùng", "Index", "Home")</li>
+                <li>@Html.ActionLink("Đăng xuất", "User", "Login")</li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div><!-- container -->
+    </header>
+
+    @RenderBody()
+
+
+    <footer class="pb-50  pt-70 pos-relative">
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container-fluid">
+
+            <div class="pt-30">
+                <p class="underline-secondary"><b>Address:</b></p>
+                <p>236 Hoàng Quốc Việt, Hà Nội</p>
+            </div>
+
+            <div class="pt-30">
+                <p class="underline-secondary mb-10"><b>Phone:</b></p>
+                <a href="tel:+84 123 456 789">+84 123 456 789</a>
+            </div>
+
+            <div class="pt-30">
+                <p class="underline-secondary mb-10"><b>Email:</b></p>
+                <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com</a>
+            </div>
+
+            <ul class="icon mt-30">
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+            </ul>
+
+            <p class="color-light font-9 mt-50 mt-sm-30">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This product is made with <i class="ion-heart" aria-hidden="true"></i> by HieuPham & VanVu
+            </p>
+        </div><!-- container -->
+    </footer>
+
+
+    <script src="~/Content/plugin-frameworks/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/plugin-frameworks/bootstrap.min.js"></script>
+    <script src="~/Content/plugin-frameworks/swiper.js"></script>
+    <script src="~/Content/common/scripts.js"></script>
+    <script src="~/Content/common/myJS.js"></script>
+    <script type="text/javascript" src="~/Content/common/jquery.waypoints.min.js"></script>
+    @RenderSection("cartJS", required: false)
+</body>
+</html>

@@ -312,6 +312,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\EditDatetime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1922,6 +1924,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\common\CartJS.js" />
+    <Content Include="Content\common\ContactJS.js" />
     <Content Include="Content\common\jquery.waypoints.min.js" />
     <Content Include="Content\common\myJS.js" />
     <Content Include="Content\common\myStyle.css" />
@@ -1940,6 +1944,7 @@
     <Content Include="Content\images\blog-1-1000x400.jpg" />
     <Content Include="Content\images\blog-2-1000x400.jpg" />
     <Content Include="Content\images\blog-3-1000x400.jpg" />
+    <Content Include="Content\images\ImgIcon\edit.png" />
     <Content Include="Content\images\menu\Coca-Cola-1.5l.jpg" />
     <Content Include="Content\images\menu\Coca-Cola-390ml.jpg" />
     <Content Include="Content\images\footer-1.png" />
@@ -2323,12 +2328,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Menu.cshtml" />
-    <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Login\User.cshtml" />
     <Content Include="Views\Login\Admin.cshtml" />
-    <Content Include="Views\CartShop\Index.cshtml" />
     <Content Include="Views\Signup\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutCart.cshtml" />
+    <Content Include="Views\CartShop\Index.cshtml" />
+    <Content Include="Views\Home\XemChiTietMon.cshtml" />
+    <Content Include="Views\Home\CartIconPV.cshtml" />
+    <Content Include="Views\Home\XemMonTrongDSMon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2336,7 +2344,6 @@
     <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Content\admin\js\plugins\" />
     <Folder Include="Content\images\Drink\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

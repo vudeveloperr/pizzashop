@@ -1,130 +1,141 @@
-﻿
+﻿@model List<PizzaShop.Models.CartItem>
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCart.cshtml";
+}
+@section cartJS{
+    <script src="/Content/common/CartJS.js"></script>
 }
 
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title>PizzaH&V</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+<div class="banner">
+</div>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="~/Content/fonts/beyond_the_mountains-webfont.css" type="text/css" />
 
-    <!-- Stylesheets -->
-    <link href="~/Content/plugin-frameworks/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/plugin-frameworks/swiper.css" rel="stylesheet">
-    <link href="~/Content/fonts/ionicons.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="~/Content/common/styleCartShop.css" />
-    <link href="~/Content/common/styles.css" rel="stylesheet">
-
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a class="logo" href="#"><img src="~/Content/images/Logo/Logo.png" alt="Logo"></a>
-
-            <div class="right-area">
-                <a class="plr-20 color-white btn-fill-primary" href="~/CartShop/Index">
-                    <img src="~/Content/images/Logo/cart-plus-solid.svg" alt="CartShop">
-                    <span class="item-increat count-item" data-count="0">0</span>
-                </a>
+@*modal thanh toan*@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thanh toán</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: grid; grid-template-columns: 25% auto; margin-bottom:  10px;">
+                    <label>Tổng số món</label>
+                    <p>xxx</p>
+                </div>
+                <div style="display: grid; grid-template-columns: 25% auto; margin-bottom:  10px;">
+                    <label>Tổng tiền</label>
+                    <p>xxx VNĐ</p>
+                </div>
+                <div style="display: grid; grid-template-columns: 25% auto;  margin-bottom:  10px; ">
+                    <label>Họ tên</label>
+                    <input type="text" placeholder="Nhập họ tên" style="border-radius: 5px; padding-left: 10px;" />
+                </div>
+                <div style="display: grid; grid-template-columns: 25% auto;  margin-bottom:  10px;">
+                    <label>Số điện thoại</label>
+                    <input type="text" placeholder="Nhập số điện thoại" style="border-radius: 5px; padding-left: 10px;" />
+                </div>
+                <div style="display: grid; grid-template-columns: 25% auto; margin-bottom:  10px;">
+                    <label>Địa chỉ</label>
+                    <input type="text" placeholder="Nhập địa chỉ" style="border-radius: 5px; padding-left: 10px;" />
+                </div>
+                <div style="display: grid; grid-template-columns: 25% auto;">
+                    <label>Ghi chú</label>
+                    <input type="text" placeholder="Yêu cầu của bạn" style="border-radius: 5px; padding-left: 10px;" />
+                </div>
             </div>
 
-            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
-
-            <ul class="main-menu font-mountainsre" id="main-menu">
-                <li><a href="~/Home/Menu">Menu</a></li>
-                <li><a href="#">Thông tin người dùng</a></li>
-                <li><a href="~/Login/User">Đăng xuất</a></li>
-            </ul>
-
-            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đặt hàng</button>
+            </div>
         </div>
-    </header>
-
-    <div class="banner">
     </div>
+</div>
 
-    <!-- cart shop -->
-    <div class="container">
-        <div class="row">
-            <section class="section cart-shop">
-                <div class="table-responsive" style="overflow-x:auto;">
+
+<!-- cart shop -->
+<div class="container">
+    <div class="row">
+        <section class="section cart-shop">
+            <div class="table-responsive" style="overflow-x:auto;">
+                @if (Model.Count > 0)
+                {
                     <table class="table product-table">
                         <thead>
                             <tr>
-                                <th style="width: 15%;"></th>
-                                <th style="width: 50%;">Sản Phẩm</th>
+                                <th style="width: 20%;"></th>
+                                <th style="width: 35%;">Sản Phẩm</th>
                                 <th style="width: 10%;">Giá</th>
-                                <th style="width: 10%;">Số Lượng</th>
-                                <th style="width: 5%;">Tổng Cộng</th>
+                                <th style="width: 15%;">Số Lượng</th>
+                                <th style="width: 15%;">Tổng Cộng</th>
                                 <th style="width: 5%;"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>
-                                    <img src="/images/Pizza/Meat-Lovers-Pizza.jpg"
-                                         alt="" />
-                                </th>
-                                <th>
-                                    <h5>
-                                        <strong>Piaza love</strong>
-                                    </h5>
-                                </th>
-                                <td>15 VND</td>
-                                <td class="center-on-small-only">
-                                    <span class="qty">1 </span>
-                                    <div class="btn-group radio-group" data-toggle="buttons">
-                                        <label class="btn btn-sm btn-primary
-                                        btn-rounded waves-effect waves-light">
-                                            <a>—</a>
-                                        </label>
-                                        <label class="btn btn-sm btn-primary
-                                        btn-rounded waves-effect waves-light">
-                                            <a>+</a>
-                                        </label>
-                                    </div>
-                                </td>
-                                <td>15 VND</td>
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="top"
-                                            title="" data-original-title="Remove item">
-                                        X
-                                    </button>
-                                </td>
-                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th>
+                                        <img src="~/Content/images/menu/@item.MonAn.AnhMon"
+                                             alt="" />
+                                    </th>
+                                    <th>
+                                        <h5>
+                                            <strong>@item.MonAn.TenMon</strong>
+                                        </h5>
+                                    </th>
+                                    <td>@item.MonAn.Gia.GetValueOrDefault(0).ToString("N0") VNĐ</td>
+                                    <td class="center-on-small-only" style="flex-direction: row;">
+                                        <input type="number"
+                                               style="padding-left: 10px; width: 50px; border-radius: 5px;"
+                                               class="inputSoLuong"
+                                               min="1"
+                                               data-id="@item.MonAn.MaMon"
+                                               value="@item.SoLuong" />
+                                        <button class="btn btn-primary" id="btn-edit" style="padding: 5px 10px; margin-left: 5px;">
+                                            <img src="~/Content/images/ImgIcon/edit.png" style="width: 15px; display:flex;" />
+                                        </button>
+                                    </td>
+                                    <td>@((item.MonAn.Gia.GetValueOrDefault(0) * item.SoLuong).ToString("N0")) VND</td>
+                                    <td>
+                                        <button type="button"
+                                                class="btn btn-sm btn-primary waves-effect waves-light btn-delete-product"
+                                                data-id="@item.MonAn.MaMon"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title=""
+                                                data-original-title="Remove item">
+                                            X
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
                             <tr>
                                 <td colSpan="3"></td>
-                                <td>
-                                    <h4>
-                                        <strong>15 VND</strong>
-                                    </h4>
-                                </td>
+                                <td></td>
                                 <td colSpan="3">
-                                    <button type="button" class="btn btn-primary waves-effect waves-light">
-                                        Thanh toán
-                                        <i class="fa fa-angle-right right"></i>
-                                    </button>
+                                    <a class="plr-5"
+                                       data-toggle="modal"
+                                       data-target="#exampleModal"
+                                       style="border: 1px solid gray; border-radius: 5px; background-color: #1245ff;">
+                                        <p style="color: white; padding: 5px;">Thêm ngay</p>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-            </section>
-        </div>
+                }
+                else
+                {
+                    <span style="font-size: 20px; width: 100%; text-align: center;">Chưa có sản phẩm nào trong giỏ hàng</span>
+                }
+            </div>
+        </section>
     </div>
+</div>
 
-    <!-- SCIPTS -->
-    <script src="~/Content/plugin-frameworks/jquery-3.2.1.min.js"></script>
-    <script src="~/Content/plugin-frameworks/bootstrap.min.js"></script>
-    <script src="~/Content/plugin-frameworks/swiper.js"></script>
-    <script src="~/Content/common/scripts.js"></script>
 
-</body>
-</html>

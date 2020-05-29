@@ -24,12 +24,7 @@
         <div class="container">
             <a class="logo" href="#"><img src="~/Content/images/Logo/Logo.png" alt="Logo"></a>
 
-            <div class="right-area">
-                <a id="card-shop" class="plr-20 color-white btn-fill-primary" href="~/CartShop/Index">
-                    <img src="~/Content/images/Logo/cart-plus-solid.svg" alt="CartShop">
-                    <span class="item-increat count-item" data-count="0">0</span>
-                </a>
-            </div><!-- right-area -->
+            @{ Html.RenderAction("CartIconPV", "Home"); }
 
             <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
@@ -37,7 +32,6 @@
                 <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
                 <li>@Html.ActionLink("Menu", "Menu", "Home")</li>
                 <li>@Html.ActionLink("Về chúng tôi", "About", "Home")</li>
-                <li>@Html.ActionLink("Diễn đàn", "Blog", "Home")</li>
                 <li>@Html.ActionLink("Liên lạc", "Contact", "Home")</li>
                 <li>@Html.ActionLink("Đăng nhập", "User", "Login")</li>
             </ul>
@@ -88,5 +82,7 @@
     <script src="~/Content/common/scripts.js"></script>
     <script src="~/Content/common/myJS.js"></script>
     <script type="text/javascript" src="~/Content/common/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    @RenderSection("ContactJS", required: false)
 </body>
 </html>
