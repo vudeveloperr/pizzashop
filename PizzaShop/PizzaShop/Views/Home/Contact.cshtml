@@ -3,7 +3,9 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section ContactJS{
+    <script src="~/Content/common/ContactJS.js"></script>
+}
 
 <section class="bg-6 h-500x main-slider pos-relative">
     <div class="triangle-up pos-bottom"></div>
@@ -20,21 +22,35 @@
 <section class="story-area left-text center-sm-text">
     <div class="container">
         <div class="heading">
-            <img class="heading-img" src="images/heading_logo.png" alt="">
+            <img class="heading-img" src="~/Content/images/heading_logo.png" alt="">
             <h2>Say hello</h2>
             <h5 class="mt-10 mb-30">Say hello, gửi những cảm nhận của bạn về chúng tôi</h5>
         </div>
 
         <form class="form-style-1 placeholder-1">
             <div class="row">
-                <div class="col-md-6"> <input class="mb-20" type="text" placeholder="Tên">  </div>
-                <div class="col-md-6"> <input class="mb-20" type="text" placeholder="Email">  </div>
-                <div class="col-md-12"><input class="mb-20" type="text" placeholder="Số điện thoại">  </div>
+                <div class="col-md-6">
+                    <input class="mb-20" type="text" id="txtName" placeholder="Tên">
+                </div>
+                <div class="col-md-6">
+                    <input type="email"
+                           class="mb-20"
+                           id="txtEmail"
+                           placeholder="Ten@gmail.com" required>
+                </div>
                 <div class="col-md-12">
-                    <textarea class="h-200x ptb-20" placeholder="Ý kiến của bạn"></textarea>
+                    <input class="mb-20" type="text" id="txtAddress" placeholder="Địa chỉ">
+                </div>
+                <div class="col-md-12">
+                    <textarea class="h-200x ptb-20" id="txtFeedBack" placeholder="Ý kiến của bạn"></textarea>
                 </div>
             </div><!-- row -->
-            <h6 class="center-text mtb-30"><a href="#" class="btn-primaryc plr-25"><b>Gửi</b></a></h6>
+
+            <h6 class="center-text mtb-30">
+                <a class="btn-primaryc plr-25" id="send-feedback">
+                    <b>Gửi</b>
+                </a>
+            </h6>
         </form>
     </div><!-- container -->
 </section>

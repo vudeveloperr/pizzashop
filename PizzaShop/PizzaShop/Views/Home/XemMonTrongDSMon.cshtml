@@ -1,0 +1,23 @@
+﻿
+@model List<Model.Entities.tblMonAn>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-6">
+        <div class="sided-90x mb-30 ">
+            <div class="s-left"><img class="br-3" src="~/Content/images/menu/@item.AnhMon" alt="Menu Image"></div><!--s-left-->
+            <div class="s-right">
+                <div class="mb-10">
+                    <b>@item.TenMon</b>
+                    <a class="float-right btn-fill-primary plr-5"
+                       data-toggle="modal"
+                       data-target="#exampleModal"
+                       onclick="layIdMon(@item.MaMon);">
+                        <p style="padding: 5px; color: white;">Thêm ngay</p>
+                    </a>
+                </div>
+                <p class="pr-70">@item.MoTa</p>
+            </div><!--s-right-->
+        </div><!-- sided-90x -->
+    </div><!-- food-menu -->
+}

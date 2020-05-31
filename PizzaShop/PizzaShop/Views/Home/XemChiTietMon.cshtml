@@ -1,0 +1,62 @@
+﻿
+@model Model.Entities.tblMonAn
+
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">@Model.TenMon</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="">
+        <div class="sided-90x mb-30 main-item">
+            <div class="s-left">
+                <img class="br-3" src="~/Content/images/menu/@Model.AnhMon" alt="Menu Image">
+            </div><!--s-left-->
+            <div class="s-right">
+                <p>
+                    @Model.MoTa
+                </p>
+                <div class="price-item">
+                    <div>
+                        <b>Cỡ nhỏ:</b>
+                        <p>@Model.Gia VNĐ</p>
+                    </div>
+                    <div>
+                        <b>Cỡ vừa:</b>
+                        <p>@Model.GiaVua VNĐ</p>
+                    </div>
+                    <div>
+                        <b>Cỡ lớn:</b>
+                        <p>@Model.GiaLon VNĐ</p>
+                    </div>
+                </div>
+                <div class="chose-size">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="" id="cbSizeS">
+                        <label class="form-check-label" for="cbSizeS">Cỡ nhỏ</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="" id="cbSizeM">
+                        <label class="form-check-label" for="cbSizeM">Cỡ vừa</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="" id="cbSizeL">
+                        <label class="form-check-label" for="cbSizeL">Cỡ lớn</label>
+                    </div>
+                </div>
+            </div><!--s-right-->
+        </div><!-- sided-90x -->
+    </div><!-- food-menu -->
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        Đóng
+    </button>
+
+    <a href="/them-gio-hang?maMon=@Model.MaMon&soLuong=1"
+       style="padding: 10px; margin-left: 10px; background-color: #ea2525; color: white; border-radius: 5px; ">
+        <b>Đặt hàng</b>
+    </a>
+</div>
+
